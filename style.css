@@ -1,0 +1,26 @@
+#search {
+  width: 70%;
+  font-size: 16px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+#searchBtn {
+  height: 42px;
+  width: 90px;
+  font-size: 16px;
+}
+#error {
+  visibility: hidden;
+}
+#userName {
+  font-size: 24px;
+  font-weight: bold;
+}
+#lists {
+  display: flex;
+  flex-direction: row;
+}
+#root ul {
+  font-size: 20px;
+  font-weight: bold;
+}
