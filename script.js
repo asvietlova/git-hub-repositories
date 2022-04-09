@@ -8,7 +8,6 @@ let gitHubUser = 'https://api.github.com/users/';
 
 // Function to show error DIV.
 function showError(errMsg) {
-  //  console.log(error);
     error.style.visibility = "visible";
     error.innerText = errMsg;
 };
@@ -37,7 +36,7 @@ function search() {
 
 function fillGithubUser(userInfoJSON) {
     root.style.visibility = "visible";
-    
+
     let container = document.getElementById('userName');
     container.innerText = userInfoJSON.name;
     container.href = userInfoJSON.html_url;
@@ -55,7 +54,7 @@ function getUser(input) {
             return response.json()
         })
         .then((json) => {
-           fillGithubUser(json);
+            fillGithubUser(json);
         })
         .catch(err => {
             showError(err);
@@ -67,7 +66,7 @@ function getUserRepos(url) {
         .then(e => e.json())
         .then(res => {
             userReposList.innerText = 'Repositories:';
-            res.forEach(element => {                
+            res.forEach(element => {
                 let repoItem = document.createElement('li');
                 repoItem.style.fontWeight = 'normal';
                 userReposList.append(repoItem);

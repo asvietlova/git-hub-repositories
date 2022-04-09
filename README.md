@@ -1,2 +1,4 @@
-# JS3.0_HW7
+Using the Fetch API
+
+when entering a user name, its repositories and subscribers are displayed
 
